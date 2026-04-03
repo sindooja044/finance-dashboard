@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useContext } from "react";
+import { AppContext } from "../../context/AppContext";
 
 const Navbar = () => {
-  const [role, setRole] = useState("viewer");
+  const { role, setRole } = useContext(AppContext);
 
   return (
     <div className="bg-white shadow p-4 flex justify-between">
